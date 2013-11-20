@@ -15,7 +15,7 @@
 #
 
 # call the proprietary setup
-$(call inherit-product-if-exists, vendor/htc/m7-gsm/m7-gsm-vendor.mk)
+$(call inherit-product-if-exists, vendor/htc/m7tmo/m7tmo-vendor.mk)
 
 # overlays
 DEVICE_PACKAGE_OVERLAYS += device/htc/m7tmo/overlay
@@ -25,3 +25,7 @@ DEVICE_PACKAGE_OVERLAYS += device/htc/m7-common/overlay-gsm
 
 # Inherit from m7-common
 $(call inherit-product, device/htc/m7-common/m7-common.mk)
+
+#OmniTorch
+ PRODUCT_PACKAGES += \
+        OmniTorch
